@@ -10,6 +10,7 @@ class Job(models.Model):
     source = models.CharField(max_length=100)
     date_posted = models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    
 
     def __str__(self):
         return f"{self.title} at {self.company}"
